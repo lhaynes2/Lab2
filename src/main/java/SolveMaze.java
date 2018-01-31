@@ -37,7 +37,7 @@ public class SolveMaze {
             if (maze.canMove()){
                 maze.move();
             }
-            else if (!maze.canMove()) {
+            else if (maze.canMove() == false) {
                 maze.turnLeft();
                     if (maze.canMove()){
                         maze.move();
